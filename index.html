@@ -102,6 +102,57 @@
       border-bottom: 2px solid #aa3c3c;
     }
 
+    .img-embed {
+      margin: 1.8rem 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .img-embed img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .img-embed .caption {
+      background: #f6f4ef;
+      padding: 0.5rem 1rem;
+      font-size: 0.85rem;
+      color: #4d4d4d;
+      font-style: italic;
+      border-top: 1px solid #e0dbd0;
+    }
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem 2rem;
+      background: #f9f7f2;
+      padding: 1.2rem 1.5rem;
+      border-radius: 10px;
+      margin: 1.5rem 0;
+      align-items: center;
+    }
+    .logo-grid img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
+      filter: grayscale(0.2);
+      transition: 0.2s;
+    }
+    .logo-grid img:hover {
+      filter: grayscale(0);
+      transform: scale(1.05);
+    }
+    .logo-grid .logo-label {
+      width: 100%;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #5d4e3a;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+    }
+
     .footnote-block {
       margin-top: 2.8rem;
       padding-top: 1.8rem;
@@ -165,6 +216,9 @@
         padding: 1rem 1.2rem;
         font-size: 1.1rem;
       }
+      .logo-grid img {
+        height: 30px;
+      }
     }
   </style>
 </head>
@@ -173,13 +227,25 @@
 
     <h1>The price of a T‑shirt</h1>
     <div class="subhead">What you pay at the register is nothing compared to what the planet and its people pay.</div>
-    <div class="byline">By Austin Liu · 28 July 2026</div>
+    <div class="byline">By the editorial board · 28 July 2026</div>
 
     <p class="lead">To the average person, a cotton t‑shirt and jeans cost nothing more than 25 bucks. But behind the price tag, there is a much bigger human and environmental cost.</p>
 
     <p><span class="stat-highlight">So how much do your clothes really cost?</span> The production processes of cotton denim are extremely meticulous, using tons of water, chemical treatments, and energy. Through the whole process of growing cotton, water‑dyeing and cleaning, one kilogram of cotton uses around ten thousand liters of water, and global cotton production alone consumes over 250 billion tons of water annually <a href="#ref4" class="citation-link">[4]</a>. Toxic dyes and chemicals used for treatment are disposed of directly into rivers in developing countries like Bangladesh, India and China, and fabric production is responsible for 20% of GHG emissions worldwide.</p>
 
+    <!-- Image: polluted river in China -->
+    <div class="img-embed">
+      <img src="https://www.digital-science.com/wp-content/uploads/2025/02/red-river-china-CFP460277545.jpg" alt="Red polluted river in China from textile dyeing">
+      <div class="caption">A river in China turns red from untreated textile dye waste — a direct consequence of the clothes we wear.</div>
+    </div>
+
     <p>Polyester and acrylic fabrics deplete non‑renewable fossil fuels, and produce upwards of 1 million microplastics each wash, responsible for 10% of the microplastics around the world. You are literally eating and breathing your clothes.</p>
+
+    <!-- Image: pool of dyed water -->
+    <div class="img-embed">
+      <img src="https://media.cnn.com/api/v1/images/stellar/prod/200925125811-10-fashion-textile-dyeing-restricted.jpg?q=w_2124,h_1416,x_0,y_0,c_fill" alt="A pool of brightly colored toxic dye water from textile processing">
+      <div class="caption">This isn't an art installation — it's toxic dye runoff from a garment factory, often dumped straight into local waterways.</div>
+    </div>
 
     <div class="pull-quote">
       “The overproduction causes 70% of clothes to be dumped one year after production, and 40% of all clothes are never even worn.”
@@ -189,22 +255,45 @@
 
     <p>The overproduction causes <strong>70% of clothes to be dumped one year after production</strong>, and 40% of all clothes are never even worn <a href="#ref2" class="citation-link">[2]</a>. Unable to turn back into usable fabric, they are piled into chemical‑leaking, poisonous gas‑spewing incineration plants, or landfills next to communities far away from your home. Garment production shows no signs of stopping; in fact, it is only increasing at an exponential rate.</p>
 
+    <!-- Image: Ghana clothes dump -->
+    <div class="img-embed">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="Mountain of discarded clothing in a landfill in Ghana">
+      <div class="caption">A landfill in Ghana, buried under the cast‑offs of fast fashion — clothes that were worn just a handful of times, if at all.</div>
+    </div>
+
     <p>Realize that your clothes might only cost you 25 bucks, but every piece of fast fashion you buy or throw away is irreversible damage to the environment and fellow human beings around the world.</p>
 
     <p>It’s not your fault that nobody has told you this. However, you now have the power to make a positive change.</p>
 
-    <p><strong>Take your time to care for the environment, and fast fashion workers, and go thrift shopping!</strong> Thrifting is better for your pocket and the environment, because it gives clothes a second life without directly funding the child‑labor‑abusing, worker‑exploiting industry owners <a href="#ref3" class="citation-link">[3]</a>. Yet, be mindful: recent research shows that secondhand consumption can sometimes <em>supplement</em>, rather than replace, new purchases <a href="#ref2" class="citation-link">[2]</a>. Thrifting is a fantastic start, but it really shines when you also cut back on how much you buy overall. Tossing clothes in the trash is the lazy way out. Instead, take a moment to donate or sell them. And remember, don't grab more than you actually need.</p>
+    <!-- Fast fashion logos -->
+    <div class="logo-grid">
+      <div class="logo-label">The usual suspects</div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="Aerie logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="Boohoo logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="Zara logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="SHEIN logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="Forever 21 logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cxEzmQOTcYxl35q60HcM0_AXXXNNs0wWYkLRI8XIltUWuHUlVpLw7zM9&s=10" alt="H&M logo">
+    </div>
+
+    <p><strong>Take your time to care for the environment, and fast fashion workers, and go thrift shopping!</strong> Thrifting is better for your pocket and the environment, because it gives clothes a second life without directly funding the child‑labor‑abusing, worker‑exploiting industry owners <a href="#ref3" class="citation-link">[3]</a>. Yet, be mindful — recent research shows that secondhand consumption can sometimes <em>supplement</em>, rather than replace, new purchases <a href="#ref2" class="citation-link">[2]</a>. Thrifting is a fantastic start, but it really shines when you also cut back on how much you buy overall. Tossing clothes in the trash is the lazy way out — instead, take a moment to donate or sell them. And remember, don't grab more than you actually need.</p>
+
+    <!-- Image: thrift store interior -->
+    <div class="img-embed">
+      <img src="https://cdn.apartmenttherapy.info/image/upload/v1691692335/at/living/2023-08/top-thrifting-tips/top-thrifting-tips-4.jpg" alt="Inside a well-stocked thrift store with racks of secondhand clothing">
+      <div class="caption">A thrift store aisle — full of character, history, and clothes that are ready for a second chapter. No new resources required.</div>
+    </div>
 
     <p>Next time you're shopping, pause and ask yourself: how long will this actually stay in my closet? Will it be worn regularly? Will it look “too old” for the next trend? Are there already enough clothes at home? Could this have been thrifted instead? Does the brand treat workers fairly?</p>
 
     <!-- Additional detailed points (expanded) -->
     <p><strong>The hidden chain of injustice.</strong> That $5 T‑shirt starts its life in cotton fields soaked with pesticides that seep into groundwater, and ends up in incinerators belching toxic fumes. In between, workers in poor countries are denied breaks, breathe in dangerous fibers, and face firing if they try to organize. Fast‑fashion brands have made this a race to the bottom, squeezing every penny out of the most vulnerable people. <a href="#ref1" class="citation-link">[1]</a> And all of this is hidden behind glossy ads and influencer posts.</p>
 
-    <p><strong>The psychology of overconsumption.</strong> We buy clothes not just because we need them, but because we are told we need them. Micro‑trends, limited drops, and 24‑hour sales engineer a sense of urgency. And when we donate or resell, we often feel virtuous, but that goodwill can mask the fact that we are still consuming at a rate that far exceeds what the planet can bear. <a href="#ref2" class="citation-link">[2]</a> The most sustainable garment is the one already in your closet.</p>
+    <p><strong>The psychology of overconsumption.</strong> We buy clothes not just because we need them, but because we are told we need them. Micro‑trends, limited drops, and 24‑hour sales engineer a sense of urgency. And when we donate or resell, we often feel virtuous — but that goodwill can mask the fact that we are still consuming at a rate that far exceeds what the planet can bear. <a href="#ref2" class="citation-link">[2]</a> The most sustainable garment is the one already in your closet.</p>
 
-    <p><strong>What about “green” collections?</strong> Many brands promote eco‑lines made from recycled polyester or organic cotton. But these collections often represent less than 1% of total production, while the rest continues business as usual. Meanwhile, the term “circular” is used loosely: true circularity requires closed‑loop systems that keep materials in use indefinitely, not just a second cycle. Until production volumes drop and wages rise, these initiatives remain greenwashing.</p>
+    <p><strong>What about “green” collections?</strong> Many brands promote eco‑lines made from recycled polyester or organic cotton. But these collections often represent less than 1% of total production, while the rest continues business as usual. Meanwhile, the term “circular” is used loosely — true circularity requires closed‑loop systems that keep materials in use indefinitely, not just a second cycle. Until production volumes drop and wages rise, these initiatives remain greenwashing.</p>
 
-    <p><strong>Your choices matter, but so does collective action.</strong> Individual shifts (thrifting, repairing, swapping) are powerful and necessary. But for real change, we need rules, things like making brands responsible for their products' entire life cycle, honest labels about sustainability, and laws that guarantee a living wage. So support brands that are open about where their clothes come from, and vote for leaders who care about the planet and workers. The industry won't transform overnight, but each thoughtful purchase says loud and clear: exploitation is out of fashion.</p>
+    <p><strong>Your choices matter, but so does collective action.</strong> Individual shifts — thrifting, repairing, swapping — are powerful and necessary. But real change needs more than just individual choices — we need rules: things like making brands responsible for their products' entire life cycle, honest labels about sustainability, and laws that guarantee a living wage. So support brands that are open about where their clothes come from, and vote for leaders who care about the planet and workers. The industry won't transform overnight, but each thoughtful purchase says loud and clear: exploitation is out of fashion.</p>
 
     <div style="margin: 2rem 0 1.5rem 0; padding: 1.2rem 1.8rem; background: #eae7df; border-radius: 8px;">
       <p style="margin-bottom: 0.4rem; font-weight: 600;">✶  Before you click “add to cart” ✶</p>
